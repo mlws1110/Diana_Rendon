@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Contributions - Diana Rendon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .navbar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: white !important;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-brand i {
+            font-size: 1.8rem;
+            margin-right: 0.5rem;
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .nav-link:hover {
+            color: white !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .contribution-card {
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .contribution-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contribution-card .card-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .contribution-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contribution-list li {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .contribution-list li:last-child {
+            border-bottom: none;
+        }
+
+        .contribution-list li i {
+            color: var(--accent-color);
+            margin-right: 1rem;
+            margin-top: 0.25rem;
+            font-size: 1.25rem;
+        }
+
+        .contribution-badge {
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .impact-section {
+            background-color: rgba(52, 152, 219, 0.05);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .impact-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .evidence-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .evidence-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-mortarboard-fill"></i>
+                Diana Rendon
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student-learning.html">Student Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teacher-practice.html">Teacher Practice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="professional-contributions.html">Professional Contributions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="header-title">Diana Rendon</h1>
+                <p class="header-subtitle">Special Education Teacher<br>P.S. 105 The Bay School</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="info-box mb-4">
+            <p class="mb-0">Multiple sources of evidence of professional contributions at the highest level, demonstrating significant impact on the school community and exemplary professionalism.</p>
+        </div>
+
+        <div class="impact-section">
+            <h2 class="impact-title">Contributions to School and Community</h2>
+            <div class="contribution-card">
+                <div class="card-header">
+                    <h3 class="mb-0">School Leadership</h3>
+                </div>
+                <div class="card-body">
+                    <span class="contribution-badge">Community Impact</span>
+                    <ul class="contribution-list">
+                        <li>
+                            <i class="bi bi-star"></i>
+                            <div>
+                                <strong>Leadership Initiatives</strong>
+                                <p>Taking active roles in school improvement initiatives and committees</p>
+                                <div class="evidence-item">
+                                    <h4>Evidence of Impact</h4>
+                                    <ul>
+                                        <li>Committee leadership positions</li>
+                                        <li>School improvement project outcomes</li>
+                                        <li>Collaborative initiatives</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-people"></i>
+                            <div>
+                                <strong>Community Engagement</strong>
+                                <p>Building strong partnerships with families and community organizations</p>
+                                <div class="evidence-item">
+                                    <h4>Partnership Outcomes</h4>
+                                    <ul>
+                                        <li>Parent engagement programs</li>
+                                        <li>Community outreach events</li>
+                                        <li>Educational partnerships</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="impact-section">
+            <h2 class="impact-title">Professional Growth and Development</h2>
+            <div class="contribution-card">
+                <div class="card-header">
+                    <h3 class="mb-0">Professional Excellence</h3>
+                </div>
+                <div class="card-body">
+                    <span class="contribution-badge">Professional Growth</span>
+                    <ul class="contribution-list">
+                        <li>
+                            <i class="bi bi-award"></i>
+                            <div>
+                                <strong>Professional Development</strong>
+                                <p>Continuous learning and implementation of best practices</p>
+                                <div class="evidence-item">
+                                    <h4>Growth Evidence</h4>
+                                    <ul>
+                                        <li>Professional development certificates</li>
+                                        <li>Implementation of new teaching strategies</li>
+                                        <li>Mentoring and coaching activities</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-graph-up"></i>
+                            <div>
+                                <strong>Educational Leadership</strong>
+                                <p>Contributing to professional learning communities and mentoring colleagues</p>
+                                <div class="evidence-item">
+                                    <h4>Leadership Impact</h4>
+                                    <ul>
+                                        <li>Professional learning community contributions</li>
+                                        <li>Mentoring program outcomes</li>
+                                        <li>Collaborative teaching initiatives</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="impact-section">
+            <h2 class="impact-title">Professional Ethics and Responsibilities</h2>
+            <div class="contribution-card">
+                <div class="card-header">
+                    <h3 class="mb-0">Professional Standards</h3>
+                </div>
+                <div class="card-body">
+                    <span class="contribution-badge">Ethical Practice</span>
+                    <ul class="contribution-list">
+                        <li>
+                            <i class="bi bi-shield-check"></i>
+                            <div>
+                                <strong>Ethical Leadership</strong>
+                                <p>Demonstrating high standards of professional conduct and decision-making</p>
+                                <div class="evidence-item">
+                                    <h4>Professional Conduct</h4>
+                                    <ul>
+                                        <li>Ethical decision-making examples</li>
+                                        <li>Professional conduct recognition</li>
+                                        <li>Leadership in professional standards</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Diana Rendon. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Professional Teaching Portfolio</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

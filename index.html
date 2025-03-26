@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diana Rendon - Tenure Portfolio - Professional Portfolio</title>
+    <title>Diana Rendon - Professional Teaching Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <style>
@@ -81,52 +81,71 @@
         .hero-section {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 4rem 0;
+            padding: 3rem 0;
             margin-bottom: 2rem;
             position: relative;
             overflow: hidden;
         }
         
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4l-2-2V24h-2v4l-2 2v4h6zm0-30V0h-2v4h-2v2h2v4h2V6h2V4h-2zM6 34v-4l-2-2V24H2v4l-2 2v4h6zM6 4V0H4v4H2v2h2v4h2V6h2V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        .header-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
         }
         
-        .card {
+        .category-card {
             border: none;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             border-radius: 8px;
             overflow: hidden;
+            margin-bottom: 2rem;
+            background: white;
         }
         
-        .card:hover {
+        .category-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
         
-        .card-header {
-            background-color: var(--primary-color);
-            color: white;
+        .category-card .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .category-card .card-body {
+            padding: 2rem;
+        }
+        
+        .category-card .card-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .category-card .btn-primary {
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            border: none;
+            padding: 0.75rem 1.5rem;
             font-weight: 600;
-            border-bottom: none;
+            transition: transform 0.2s ease;
         }
         
-        .btn-primary {
-            background-color: var(--secondary-color);
-            border-color: var(--secondary-color);
-            border-radius: 6px;
-            padding: 0.5rem 1.5rem;
-            font-weight: 500;
+        .category-card .btn-primary:hover {
+            transform: translateY(-2px);
         }
         
-        .btn-primary:hover {
-            background-color: #2980b9;
-            border-color: #2980b9;
+        .info-box {
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(231, 76, 60, 0.1));
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
         }
         
         .footer {
@@ -146,33 +165,70 @@
             height: 3px;
             background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
         }
-        
-        .section-title {
-            color: var(--primary-color);
-            font-weight: 700;
+
+        .profile-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .profile-section img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 4px solid var(--secondary-color);
+        }
+
+        .school-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .introduction {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #2c3e50;
             margin-bottom: 2rem;
-            position: relative;
-            padding-bottom: 1rem;
         }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+
+        .bio-section {
+            margin-top: -1rem;
         }
-        
-        .timeline::before {
-            background: linear-gradient(180deg, var(--secondary-color), var(--accent-color));
+
+        .bio-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 2rem;
+            border-left: 4px solid var(--secondary-color);
         }
-        
-        .badge {
-            background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
-            padding: 0.5em 0.75em;
-            font-weight: 500;
+
+        .bio-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(52, 152, 219, 0.1);
+        }
+
+        .bio-text {
+            color: #2c3e50;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .bio-text:last-child {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -189,128 +245,93 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="student-learning.html">Student Learning</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="teacher-practice.html">Teacher Practice</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="documents.html">Documents</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="testimonials.html">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="professional-contributions.html">Professional Contributions</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-4">
-        
-            
-        
-        
-        
-<div class="text-center mb-5">
-    <h1 class="display-4">Diana Rendon</h1>
-    <h2 class="text-muted">Special Education Teacher, PS 105 The Bay School</h2>
-    
-    <img src="static/uploads/default.jpg" alt="Diana Rendon" class="rounded-circle my-4" style="max-width: 200px;">
-    
-</div>
+    <div class="hero-section">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="header-title">Diana Rendon</h1>
+                <p class="header-subtitle">Special Education Teacher<br>P.S. 105 The Bay School</p>
+            </div>
+        </div>
+    </div>
 
-<div class="row">
-    <div class="col-md-8 offset-md-2">
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-title">Welcome to My Tenure Portfolio</h3>
-                <p class="card-text">
-                    This portfolio showcases my professional journey, accomplishments, and growth as a special education teacher at PS 105 The Bay School.
-                </p>
-                <p class="card-text">
-                    Throughout this site, you'll find documentation of my teaching philosophy, classroom practices, 
-                    student achievements, professional development, and community engagement.
-                </p>
-                <div class="text-center mt-4">
-                    <a href="portfolio.html" class="btn btn-primary">View My Portfolio</a>
-                    <a href="documents.html" class="btn btn-outline-primary ms-2">Browse Documents</a>
+    <div class="container">
+        <div class="bio-section mb-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bio-card">
+                        <div class="card-body">
+                            <h2 class="bio-title mb-3">Professional Journey</h2>
+                            <p class="bio-text">As a dedicated educator, my journey has been marked by continuous growth and professional development. I was honored to be selected as a teacher fellow, which led me to achieve my bilingual license for grades 1-6 during the summer of 2021-2022. During this time, I had the valuable opportunity to mentor and teach ENL to 6th-grade students at a school in Queens, while also participating in comprehensive skill-building sessions.</p>
+                            
+                            <p class="bio-text">Working at P.S. 105 The Bay School has been an incredible journey of professional growth. Each day brings new opportunities to learn and develop alongside my dedicated colleagues and grade team. The supportive environment has enhanced my confidence in content delivery and teaching practices, allowing me to provide the best possible education for my students.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="row mt-5">
-    <div class="col-md-4">
-        <div class="card h-100">
-            <div class="card-body">
-                <h3 class="card-title">Teaching Philosophy</h3>
-                <p class="card-text">
-                    My approach to special education is rooted in the belief that every child deserves the opportunity to reach their full potential.
-                </p>
-                <a href="about.html" class="btn btn-sm btn-outline-primary">Learn More</a>
-            </div>
+        <div class="info-box mb-4">
+            <p class="mb-0">This portfolio presents evidence of my qualifications for tenure, demonstrating excellence across three essential areas of practice in the New York City Department of Education framework: Student Learning, Teacher Practice, and Professional Contributions.</p>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card h-100">
-            <div class="card-body">
-                <h3 class="card-title">Professional Growth</h3>
-                <p class="card-text">
-                    Continuous learning and development are essential components of my professional journey.
-                </p>
-                <a href="portfolio.html" class="btn btn-sm btn-outline-primary">View Accomplishments</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card h-100">
-            <div class="card-body">
-                <h3 class="card-title">Classroom Impact</h3>
-                <p class="card-text">
-                    Through differentiated instruction and student-centered approaches, I work to create meaningful learning experiences.
-                </p>
-                <a href="testimonials.html" class="btn btn-sm btn-outline-primary">Read Testimonials</a>
-            </div>
-        </div>
-    </div>
-</div>
 
+        <div class="row">
+            <div class="col-md-4">
+                <div class="category-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Student Learning</h3>
+                        <p class="card-text">Evidence of substantial student achievement and growth on New York State Standards, including special populations.</p>
+                        <a href="student-learning.html" class="btn btn-primary">View Evidence</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Teacher Practice</h3>
+                        <p class="card-text">Demonstration of effective teaching practices including planning, classroom environment, instruction, and professional responsibilities.</p>
+                        <a href="teacher-practice.html" class="btn btn-primary">View Practice</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card">
+                    <div class="card-body">
+                        <h3 class="card-title">Professional Contributions</h3>
+                        <p class="card-text">Evidence of contributions to school community and demonstration of professional growth and development.</p>
+                        <a href="professional-contributions.html" class="btn btn-primary">View Contributions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h5>Contact Information</h5>
-                    <p>
-                        <i class="bi bi-envelope me-2"></i>diana.rendon@schools.nyc.gov<br>
-                        <i class="bi bi-building me-2"></i>Special Education Teacher, PS 105 The Bay School
-                    </p>
+                <div class="col-md-6">
+                    <p>&copy; 2024 Diana Rendon. All rights reserved.</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="portfolio.html" class="text-white">Portfolio</a></li>
-                        <li><a href="documents.html" class="text-white">Documents</a></li>
-                        <li><a href="testimonials.html" class="text-white">Testimonials</a></li>
-                    </ul>
+                <div class="col-md-6 text-md-end">
+                    <p>Professional Teaching Portfolio</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Professional Profile</h5>
-                    <p>Dedicated special education teacher with a strong academic background and diverse experience in inclusive education. 
-                Earned a Bachelo...</p>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="text-center">
-                <p class="mb-0">&copy; 2025 Diana Rendon - Professional Portfolio. All rights reserved.</p>
             </div>
         </div>
     </footer>
