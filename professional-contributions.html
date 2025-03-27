@@ -98,49 +98,43 @@
             opacity: 0.9;
         }
 
-        .contribution-card {
+        .evidence-card {
             border: none;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             border-radius: 8px;
             margin-bottom: 2rem;
             overflow: hidden;
-            transition: transform 0.3s ease;
         }
 
-        .contribution-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .contribution-card .card-header {
+        .evidence-card .card-header {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 1.5rem;
+            padding: 1rem;
         }
 
-        .contribution-list {
+        .evidence-list {
             list-style: none;
             padding: 0;
         }
 
-        .contribution-list li {
-            padding: 1.5rem;
+        .evidence-list li {
+            padding: 1rem;
             border-bottom: 1px solid #eee;
             display: flex;
             align-items: flex-start;
         }
 
-        .contribution-list li:last-child {
+        .evidence-list li:last-child {
             border-bottom: none;
         }
 
-        .contribution-list li i {
+        .evidence-list li i {
             color: var(--accent-color);
             margin-right: 1rem;
             margin-top: 0.25rem;
-            font-size: 1.25rem;
         }
 
-        .contribution-badge {
+        .standard-badge {
             background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
             color: white;
             padding: 0.5rem 1rem;
@@ -150,31 +144,27 @@
             display: inline-block;
         }
 
-        .impact-section {
+        .achievement-section {
             background-color: rgba(52, 152, 219, 0.05);
             padding: 2rem;
             border-radius: 8px;
             margin-bottom: 2rem;
         }
 
-        .impact-title {
+        .achievement-title {
             color: var(--primary-color);
             border-bottom: 2px solid var(--secondary-color);
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
         }
 
-        .evidence-item {
-            background: white;
+        .info-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
             padding: 1.5rem;
             border-radius: 8px;
-            margin-bottom: 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .evidence-item h4 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
         }
     </style>
 </head>
@@ -218,122 +208,108 @@
 
     <div class="container">
         <div class="info-box mb-4">
-            <p class="mb-0">Multiple sources of evidence of professional contributions at the highest level, demonstrating significant impact on the school community and exemplary professionalism.</p>
+            <p class="mb-0">Evidence of professional contributions to the school community and education profession.</p>
         </div>
 
-        <div class="impact-section">
-            <h2 class="impact-title">Contributions to School and Community</h2>
-            <div class="contribution-card">
-                <div class="card-header">
-                    <h3 class="mb-0">School Leadership</h3>
-                </div>
-                <div class="card-body">
-                    <span class="contribution-badge">Community Impact</span>
-                    <ul class="contribution-list">
-                        <li>
-                            <i class="bi bi-star"></i>
-                            <div>
-                                <strong>Leadership Initiatives</strong>
-                                <p>Taking active roles in school improvement initiatives and committees</p>
-                                <div class="evidence-item">
-                                    <h4>Evidence of Impact</h4>
-                                    <ul>
-                                        <li>Committee leadership positions</li>
-                                        <li>School improvement project outcomes</li>
-                                        <li>Collaborative initiatives</li>
-                                    </ul>
-                                </div>
+        <div class="achievement-section">
+            <h2 class="achievement-title">School Leadership</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="evidence-card">
+                        <div class="card-header">
+                            <h3 class="mb-0">Leadership Initiatives at PS 105</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>I have actively contributed to the leadership and growth of PS 105 by engaging in various initiatives that support student achievement, school culture, and teacher collaboration.</p>
+                            
+                            <div class="mt-4">
+                                <h4>Academic Support & Intervention (2022)</h4>
+                                <p>I worked in the compensatory services program after school using the Spiral program, providing targeted academic interventions to students who required additional support. Through individualized instruction, I helped students strengthen foundational skills, improve comprehension, and build confidence in their learning.</p>
                             </div>
-                        </li>
-                        <li>
-                            <i class="bi bi-people"></i>
-                            <div>
-                                <strong>Community Engagement</strong>
-                                <p>Building strong partnerships with families and community organizations</p>
-                                <div class="evidence-item">
-                                    <h4>Partnership Outcomes</h4>
-                                    <ul>
-                                        <li>Parent engagement programs</li>
-                                        <li>Community outreach events</li>
-                                        <li>Educational partnerships</li>
-                                    </ul>
-                                </div>
+
+                            <div class="mt-4">
+                                <h4>School Event Support (2024)</h4>
+                                <p>I played a role in fostering a positive school culture by assisting with the school fashion show, ensuring a well-organized and engaging experience for students. My involvement helped create an inclusive and community-driven atmosphere.</p>
                             </div>
-                        </li>
-                    </ul>
+
+                            <div class="mt-4">
+                                <h4>School Committee & Spirit Initiatives (2025)</h4>
+                                <p>As a member of the school committee focused on school spirit, I have contributed ideas and initiatives to enhance student engagement and pride in our school. Through planned events and activities, I have worked to strengthen school morale and create a sense of belonging among students and staff.</p>
+                            </div>
+
+                            <div class="mt-4">
+                                <h4>Teacher Collaboration & Professional Growth</h4>
+                                <p>I work closely with my teaching team to share and implement differentiated instructional strategies that support diverse learners. By exchanging best practices and discussing student progress, I contribute to a culture of continuous learning and improvement among educators.</p>
+                            </div>
+
+                            <div class="mt-4">
+                                <h4>Student Enrichment (4th Grade)</h4>
+                                <p>I have provided enrichment opportunities for fourth-grade students, focusing on extending their learning beyond the curriculum. By incorporating engaging activities and higher-level thinking tasks, I support students in developing critical thinking, problem-solving, and creativity.</p>
+                            </div>
+
+                            <div class="mt-4">
+                                <p>Through these leadership roles, I have demonstrated my commitment to student success, school improvement, and professional collaboration, reinforcing my dedication to the mission and values of PS 105.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="impact-section">
-            <h2 class="impact-title">Professional Growth and Development</h2>
-            <div class="contribution-card">
-                <div class="card-header">
-                    <h3 class="mb-0">Professional Excellence</h3>
+        <div class="achievement-section">
+            <h2 class="achievement-title">Professional Contributions</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="evidence-card">
+                        <div class="card-header">
+                            <h3 class="mb-0">Mentoring & Collaboration</h3>
+                        </div>
+                        <div class="card-body">
+                            <span class="standard-badge">Professional Development</span>
+                            <ul class="evidence-list">
+                                <li>
+                                    <i class="bi bi-people"></i>
+                                    <div>
+                                        <strong>Mentoring New Teachers</strong>
+                                        <p>Provided guidance and support to new teachers in implementing effective teaching strategies</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-share"></i>
+                                    <div>
+                                        <strong>Resource Sharing</strong>
+                                        <p>Developed and shared instructional materials and assessment tools with colleagues</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <span class="contribution-badge">Professional Growth</span>
-                    <ul class="contribution-list">
-                        <li>
-                            <i class="bi bi-award"></i>
-                            <div>
-                                <strong>Professional Development</strong>
-                                <p>Continuous learning and implementation of best practices</p>
-                                <div class="evidence-item">
-                                    <h4>Growth Evidence</h4>
-                                    <ul>
-                                        <li>Professional development certificates</li>
-                                        <li>Implementation of new teaching strategies</li>
-                                        <li>Mentoring and coaching activities</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="bi bi-graph-up"></i>
-                            <div>
-                                <strong>Educational Leadership</strong>
-                                <p>Contributing to professional learning communities and mentoring colleagues</p>
-                                <div class="evidence-item">
-                                    <h4>Leadership Impact</h4>
-                                    <ul>
-                                        <li>Professional learning community contributions</li>
-                                        <li>Mentoring program outcomes</li>
-                                        <li>Collaborative teaching initiatives</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="impact-section">
-            <h2 class="impact-title">Professional Ethics and Responsibilities</h2>
-            <div class="contribution-card">
-                <div class="card-header">
-                    <h3 class="mb-0">Professional Standards</h3>
-                </div>
-                <div class="card-body">
-                    <span class="contribution-badge">Ethical Practice</span>
-                    <ul class="contribution-list">
-                        <li>
-                            <i class="bi bi-shield-check"></i>
-                            <div>
-                                <strong>Ethical Leadership</strong>
-                                <p>Demonstrating high standards of professional conduct and decision-making</p>
-                                <div class="evidence-item">
-                                    <h4>Professional Conduct</h4>
-                                    <ul>
-                                        <li>Ethical decision-making examples</li>
-                                        <li>Professional conduct recognition</li>
-                                        <li>Leadership in professional standards</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="col-md-6">
+                    <div class="evidence-card">
+                        <div class="card-header">
+                            <h3 class="mb-0">Curriculum Development</h3>
+                        </div>
+                        <div class="card-body">
+                            <span class="standard-badge">Instructional Design</span>
+                            <ul class="evidence-list">
+                                <li>
+                                    <i class="bi bi-pencil-square"></i>
+                                    <div>
+                                        <strong>Lesson Planning</strong>
+                                        <p>Created and shared differentiated lesson plans for diverse learners</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="bi bi-book"></i>
+                                    <div>
+                                        <strong>Resource Creation</strong>
+                                        <p>Developed supplementary materials to support student learning</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
