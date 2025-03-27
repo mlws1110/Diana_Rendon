@@ -157,6 +157,56 @@
             margin-bottom: 1rem;
             display: inline-block;
         }
+
+        /* New styles for observation documents */
+        .observation-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .pdf-container {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .pdf-container:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .pdf-link {
+            display: flex;
+            align-items: center;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .pdf-link i {
+            font-size: 2rem;
+            margin-right: 1rem;
+            color: var(--accent-color);
+        }
+
+        .pdf-link:hover {
+            color: var(--secondary-color);
+        }
+
+        .blur-notice {
+            background: rgba(52, 152, 219, 0.1);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -316,6 +366,68 @@
                                 <p>Ongoing participation in professional development activities</p>
                             </div>
                         </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h2 class="category-title">Classroom Observations</h2>
+            <div class="observation-card">
+                <h3 class="mb-4">Teacher Observation Documentation</h3>
+                
+                <!-- Formal Observation -->
+                <div class="pdf-container">
+                    <a href="pdfs/Formal 2023-2024.pdf" class="pdf-link" target="_blank">
+                        <i class="bi bi-file-earmark-pdf"></i>
+                        <div>
+                            <h4 class="mb-1">Formal Observation 2023-2024</h4>
+                            <p class="mb-0">Detailed evaluation of teaching practices and classroom management</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Informal Observation -->
+                <div class="pdf-container">
+                    <a href="pdfs/informal 2023-2024.pdf" class="pdf-link" target="_blank">
+                        <i class="bi bi-file-earmark-pdf"></i>
+                        <div>
+                            <h4 class="mb-1">Informal Observation 2023-2024</h4>
+                            <p class="mb-0">Ongoing assessment of teaching methods and student engagement</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Growth Reflection Section -->
+            <div class="observation-card mt-4">
+                <h3 class="mb-4">Professional Growth Reflection</h3>
+                <div class="evidence-badge">Danielson Framework Component 3B</div>
+                
+                <div class="mb-4">
+                    <h4 class="text-primary">Initial Assessment - May 2024</h4>
+                    <p>During my formal observation on teaching main ideas, I received a "Developing" rating in Danielson Framework Component 3B: Using Questioning and Discussion Techniques. At that time, my questioning strategies primarily focused on recall-based questions, with limited opportunities for higher-order thinking and student-led discussions.</p>
+                </div>
+
+                <div class="mb-4">
+                    <h4 class="text-primary">Implementation of Improvements</h4>
+                    <p>Following this feedback, I implemented intentional strategies to enhance student engagement through questioning:</p>
+                    <ul class="practice-list">
+                        <li><i class="bi bi-check-circle"></i>Incorporated open-ended questions and wait time</li>
+                        <li><i class="bi bi-check-circle"></i>Integrated student-to-student discourse techniques</li>
+                        <li><i class="bi bi-check-circle"></i>Implemented structured sentence stems</li>
+                        <li><i class="bi bi-check-circle"></i>Facilitated small-group discussions</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h4 class="text-primary">Growth Outcome - June 2024</h4>
+                    <p>By June 2024, during my informal observation, I demonstrated significant growth in this area:</p>
+                    <ul class="practice-list">
+                        <li><i class="bi bi-star-fill"></i>Students actively engaged in discussions</li>
+                        <li><i class="bi bi-star-fill"></i>Students responded to each other's ideas</li>
+                        <li><i class="bi bi-star-fill"></i>Students justified answers using textual evidence</li>
+                        <li><i class="bi bi-star-fill"></i>Achieved "Effective" rating in Component 3B</li>
                     </ul>
                 </div>
             </div>
