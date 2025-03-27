@@ -157,6 +157,214 @@
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
         }
+
+        .student-growth-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(52, 152, 219, 0.1);
+        }
+
+        .timeline-indicator {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .date-badge {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .strategy-card {
+            background: rgba(52, 152, 219, 0.05);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .strategy-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .strategy-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .strategy-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .strategy-list li i {
+            color: var(--secondary-color);
+            margin-right: 0.5rem;
+        }
+
+        .work-example-card {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .example-title {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .image-upload-area {
+            border: 2px dashed #dee2e6;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            background: #f8f9fa;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .upload-placeholder {
+            color: #6c757d;
+        }
+
+        .upload-placeholder i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .analysis-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            height: 100%;
+        }
+
+        .analysis-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .analysis-points {
+            padding-left: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        .analysis-points li {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .progress-arrow {
+            text-align: center;
+            margin: 2rem 0;
+            color: var(--secondary-color);
+        }
+
+        .progress-arrow i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-arrow span {
+            display: block;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .reflection-section {
+            background: rgba(52, 152, 219, 0.05);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .impact-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .impact-text {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .impact-list {
+            padding-left: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        .impact-list li {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .student-work-image {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .student-work-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        /* New styles for i-Ready images */
+        .iready-image {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 0.5rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .iready-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .iready-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .iready-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 992px) {
+            .iready-container {
+                padding: 0 2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -228,6 +436,66 @@
                                     </div>
                                 </li>
                             </ul>
+                            
+                            <!-- i-Ready Assessment Data -->
+                            <div class="mt-4">
+                                <h4 class="mb-3">i-Ready Reading Assessment Results</h4>
+                                <div class="iready-container">
+                                    <div class="mb-4">
+                                        <div class="iready-image">
+                                            <img src="images/iready_boy.jpeg" alt="Beginning of Year i-Ready Assessment" class="img-fluid" onclick="window.open(this.src, '_blank');">
+                                            <p class="text-center mt-2"><strong>Beginning of Year (BOY) Assessment</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="iready-image">
+                                            <img src="images/iready_moy.jpeg" alt="Middle of Year i-Ready Assessment" class="img-fluid" onclick="window.open(this.src, '_blank');">
+                                            <p class="text-center mt-2"><strong>Middle of Year (MOY) Assessment</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="analysis-card">
+                                    <h4>Growth Analysis</h4>
+                                    <h5 class="mt-3">BOY vs. MOY Comparison:</h5>
+                                    <ul class="analysis-points">
+                                        <li>BOY: 100% of students were three or more grade levels below.</li>
+                                        <li>MOY Progress:
+                                            <ul>
+                                                <li>14% of students moved up to one grade level below.</li>
+                                                <li>14% of students moved up to two grade levels below.</li>
+                                                <li>71% remain three or more grade levels below, but this is an improvement from 100%.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <h5 class="mt-4">Interventions Implemented</h5>
+                                    <div class="mb-3">
+                                        <strong>Small Group Instruction:</strong>
+                                        <ul class="analysis-points">
+                                            <li>Targeted phonics instruction (e.g., Fundations)</li>
+                                            <li>High-frequency word practice</li>
+                                            <li>Guided reading with leveled texts to build comprehension</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <strong>Phonics Intervention (Fundations):</strong>
+                                        <ul class="analysis-points">
+                                            <li>Focused on decoding strategies, blending, and word recognition</li>
+                                            <li>Strengthened foundational skills leading to growth in phonics and high-frequency words</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <strong>Comprehension Strategies:</strong>
+                                        <ul class="analysis-points">
+                                            <li>Explicit instruction in reading strategies for both literature and informational text</li>
+                                            <li>Graphic organizers, read-alouds, and discussions to enhance vocabulary and comprehension</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -308,6 +576,148 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box mb-4">
+            <p class="mb-0">Evidence of substantial student growth and achievement through the implementation of targeted instructional strategies and support tools.</p>
+        </div>
+
+        <div class="student-growth-section mb-5">
+            <h2 class="section-title">Student Work Examples: Writing Development</h2>
+            <div class="timeline-indicator">
+                <span class="date-badge">November 2023 - March 2024</span>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="strategy-card">
+                        <h3 class="strategy-title">Implemented Strategies</h3>
+                        <ul class="strategy-list">
+                            <li><i class="bi bi-check-circle-fill"></i> Sentence Starters</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Graphic Organizers</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Detail Elaboration Techniques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress-showcase">
+                <!-- November Example -->
+                <div class="work-example-card">
+                    <h3 class="example-title">Initial Assessment - November 2023</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="student-work-image">
+                                <img src="images/student-work-nov-2023.jpg" alt="Student Work Sample - November 2023" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="analysis-card">
+                                <h4>Initial Writing Stage</h4>
+                                <ul class="analysis-points">
+                                    <li>Baseline assessment of writing skills</li>
+                                    <li>Limited use of descriptive details</li>
+                                    <li>Basic sentence structure</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-arrow">
+                    <i class="bi bi-arrow-down"></i>
+                    <span>Early Implementation of Strategies</span>
+                </div>
+
+                <!-- December Example -->
+                <div class="work-example-card">
+                    <h3 class="example-title">Progress Check - December 2023</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="student-work-image">
+                                <img src="images/student-work-dec-2023.jpg" alt="Student Work Sample - December 2023" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="analysis-card">
+                                <h4>Early Progress</h4>
+                                <ul class="analysis-points">
+                                    <li>Introduction to sentence starters</li>
+                                    <li>Beginning use of graphic organizers</li>
+                                    <li>Initial improvements in detail inclusion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-arrow">
+                    <i class="bi bi-arrow-down"></i>
+                    <span>Continued Strategy Implementation</span>
+                </div>
+
+                <!-- February Example -->
+                <div class="work-example-card">
+                    <h3 class="example-title">Mid-Term Progress - February 2024</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="student-work-image">
+                                <img src="images/student-work-feb-2024.jpg" alt="Student Work Sample - February 2024" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="analysis-card">
+                                <h4>Significant Development</h4>
+                                <ul class="analysis-points">
+                                    <li>Consistent use of sentence starters</li>
+                                    <li>Improved organization with graphic organizers</li>
+                                    <li>Notable increase in detail elaboration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-arrow">
+                    <i class="bi bi-arrow-down"></i>
+                    <span>Final Implementation Phase</span>
+                </div>
+
+                <!-- March Example -->
+                <div class="work-example-card">
+                    <h3 class="example-title">Final Assessment - March 2024</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="student-work-image">
+                                <img src="images/student-work-march-2024.jpg" alt="Student Work Sample - March 2024" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="analysis-card">
+                                <h4>Mastery Achievement</h4>
+                                <ul class="analysis-points">
+                                    <li>Independent application of writing strategies</li>
+                                    <li>Rich detail and elaboration in writing</li>
+                                    <li>Confident use of organizational tools</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reflection-section mt-4">
+                <h3>Impact Analysis</h3>
+                <div class="impact-card">
+                    <p class="impact-text">This student's progress over four months demonstrates the effectiveness of implementing structured writing supports. Through the consistent use of sentence starters and graphic organizers, the student showed significant improvement in:</p>
+                    <ul class="impact-list">
+                        <li><strong>Detail Development:</strong> Enhanced ability to elaborate on ideas</li>
+                        <li><strong>Organization:</strong> Improved structure in writing</li>
+                        <li><strong>Independence:</strong> Greater confidence in writing tasks</li>
+                        <li><strong>Strategy Application:</strong> Successful use of learned techniques</li>
+                    </ul>
                 </div>
             </div>
         </div>
